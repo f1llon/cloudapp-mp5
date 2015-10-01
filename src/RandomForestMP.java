@@ -39,15 +39,15 @@ public final class RandomForestMP {
         Integer maxBins = 32;
         Integer seed = 12345;
 
-		// TODO
+	/*	// TODO
 
         JavaRDD<LabeledPoint> results = test.map(new Function<Vector, LabeledPoint>() {
             public LabeledPoint call(Vector points) {
                 return new LabeledPoint(model.predict(points), points);
             }
-        });
+        });*/
 
-        results.saveAsTextFile(results_path);
+//        results.saveAsTextFile(results_path);
 
         sc.stop();
     }
